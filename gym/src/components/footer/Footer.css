@@ -1,0 +1,40 @@
+.footer {
+  background: linear-gradient(45deg, #282e30, #fb8603);
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-links a:hover {
+  color: #ff9b04;
+}
