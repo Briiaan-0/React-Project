@@ -10,18 +10,18 @@ function Header() {
         </div>
         <ul>
           <li>
-          <NavLink to="/Home">Inicio</NavLink>
-          </li>
-          <li>
-          <NavLink to="/MiFit">MiFit</NavLink>
-          </li>
-          <li>
-          <NavLink to="/MiFit">MiFit</NavLink>
+            <NavLink to="/Home">Inicio</NavLink>
           </li>
           <li>
             <NavLink to="/MiFit">MiFit</NavLink>
           </li>
-        </ul> 
+          <li>
+            <NavLink to="/Routine">Rutinas</NavLink>
+          </li>
+          <li>
+            <NavLink to="/MiFit">MiFit</NavLink>
+          </li>
+        </ul>
       </nav>
     </div>
   );

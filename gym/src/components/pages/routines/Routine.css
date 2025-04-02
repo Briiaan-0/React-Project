@@ -1,0 +1,54 @@
+.routine-container {
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+select,
+input,
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #26ff00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(38, 255, 0, 0.75);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+li input {
+    width: 70px;
+    text-align: center;
+}

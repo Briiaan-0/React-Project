@@ -2,10 +2,16 @@
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    padding: 20px;
+    padding: 30vh;
     color: white;
-    left: 50;
-    right: 0;
+    padding-top: 10vh;
+
+}
+
+.text-welcome,
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0px;
 }
 
 .content-row {
@@ -22,6 +28,7 @@
 }
 
 .text {
+
     flex: 1;
     text-align: left;
     padding: 10px;

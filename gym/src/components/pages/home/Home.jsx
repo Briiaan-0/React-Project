@@ -7,14 +7,10 @@ function Home() {
         <>
             <Header />
             <main className="home-container">
-
-                <section className="content-row">
-                    <div className="text">
-                        <h1>Bienvenido a GymTracker</h1>
-                        <p>¡Bienvenido a nuestra aplicación de seguimiento de entrenamientos!</p>
-                    </div>
-                    <img src="/img/img1.jpg" alt="Entrenamiento en gimnasio" className="content-img" />
-                </section>
+                <div className="text-welcome">
+                    <h1>Bienvenido a GymTracker</h1>
+                    <p>¡Bienvenido a nuestra aplicación de seguimiento de entrenamientos!</p>
+                </div>
 
                 <section className="content-row reverse">
                     <img src="/img/img2.jpg" alt="Persona entrenando" className="content-img" />
@@ -36,7 +32,7 @@ function Home() {
                             deporte para mejorar tu bienestar.
                         </p>
                     </div>
-                    <img src="/img/img3.jpg" alt="Persona motivada en el gym" className="content-img" />
+                    <img src="/img/img3.png" alt="Persona motivada en el gym" className="content-img" />
                 </section>
 
             </main>

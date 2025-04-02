@@ -3,22 +3,26 @@
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background: linear-gradient(45deg, #282e30, #fb8603); /* Fondo */
+  background: linear-gradient(45deg, #282e30, #fb8603);
+  /* Fondo */
   color: white;
   position: fixed;
   top: 0%;
   left: 0%;
   right: 0%;
-  transition: all 0.3s ease-in-out; /* Animación suave para cambios */
+  transition: all 0.3s ease-in-out;
+  /* Animación suave para cambios */
 }
 
 .nav {
   display: flex;
-  align-items: center; /* Alinea los elementos verticalmente */
+  align-items: center;
+  /* Alinea los elementos verticalmente */
 }
 
 .nav .img {
-  margin-right: auto; /* Empuja el logo a la izquierda */
+  margin-right: auto;
+  /* Empuja el logo a la izquierda */
 }
 
 .nav .img img {
@@ -36,6 +40,7 @@
 }
 
 .nav li {
+  align-items: right;
   margin: 0;
 }
 
@@ -44,9 +49,11 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.3s ease; /* Efecto al pasar el ratón */
+  transition: color 0.3s ease;
+  /* Efecto al pasar el ratón */
 }
 
 .nav a:hover {
-  color: #ffe600; /* Color al pasar el ratón */
+  color: #ffe600;
+  /* Color al pasar el ratón */
 }
