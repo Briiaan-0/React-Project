@@ -1,8 +1,12 @@
 .routine-container {
     padding-left: 20px;
+    padding-right: 20px;
+    /* Agregar padding derecho */
     max-width: 800px;
     margin: 40px auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* Espaciado inferior */
     text-align: center;
 }
 
@@ -10,6 +14,10 @@ h1,
 h2 {
     color: #fff;
     margin-bottom: 20px;
+    margin-top: 20px;
+    /* Agrega espacio encima del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* Sombra para resaltar */
 }
 
 select,
@@ -17,8 +25,19 @@ input,
 button {
     width: 100%;
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
+    /* Aumento del padding para mejor legibilidad */
     font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+select:focus,
+input:focus {
+    border-color: #fff;
+    /* Cambio de borde cuando se hace foco */
+    outline: none;
 }
 
 button {
@@ -31,6 +50,10 @@ button {
 
 button:hover {
     background-color: rgba(38, 255, 0, 0.75);
+}
+
+button:focus {
+    box-shadow: 0px 0px 10px rgba(38, 255, 0, 0.8);
 }
 
 ul {
@@ -48,7 +71,54 @@ li {
     color: #fff;
 }
 
+li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color de fondo al pasar el ratón */
+}
+
 li input {
     width: 70px;
     text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+h2 {
+    margin-top: 18px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 17px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .routine-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .layout-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .calculator-container,
+    .text-container {
+        width: 100%;
+    }
 }

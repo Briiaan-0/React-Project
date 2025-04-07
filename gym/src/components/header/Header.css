@@ -1,28 +1,23 @@
+/* Estilos generales */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
   background: linear-gradient(45deg, #282e30, #fb8603);
-  /* Fondo */
   color: white;
   position: fixed;
-  top: 0%;
-  left: 0%;
-  right: 0%;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.3s ease-in-out;
-  /* Animación suave para cambios */
 }
 
 .nav {
   display: flex;
   align-items: center;
-  /* Alinea los elementos verticalmente */
-}
-
-.nav .img {
-  margin-right: auto;
-  /* Empuja el logo a la izquierda */
+  width: 100%;
+  justify-content: space-between;
 }
 
 .nav .img img {
@@ -30,7 +25,24 @@
   height: auto;
 }
 
-.nav ul {
+/* Botón Hamburguesa */
+.menu-toggle {
+  display: none;
+  /* Ocultar en escritorio */
+  background: none;
+  border: none;
+  font-size: 3vh;
+  width: 55px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Estilos del menú */
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -39,21 +51,48 @@
   gap: 20px;
 }
 
-.nav li {
-  align-items: right;
+.nav-links li {
   margin: 0;
 }
 
-.nav a {
+.nav-links a {
   text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s ease;
-  /* Efecto al pasar el ratón */
 }
 
-.nav a:hover {
+.nav-links a:hover {
   color: #ffe600;
-  /* Color al pasar el ratón */
+}
+
+/*  Responsive: Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    /* Mostrar en móviles */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

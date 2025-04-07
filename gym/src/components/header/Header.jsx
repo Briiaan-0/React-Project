@@ -1,30 +1,35 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
 
-function Header() {
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="header">
-      <nav className="nav">
+    <header className="header">
+      <div className="nav">
         <div className="img">
-          <img src="../../img/Logo.png" alt="logo" />
+          <Link to="/">
+            <img src="/img/Logo.png" alt="GymTracker Logo" />
+          </Link>
         </div>
-        <ul>
-          <li>
-            <NavLink to="/Home">Inicio</NavLink>
-          </li>
-          <li>
-            <NavLink to="/MiFit">MiFit</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Routine">Rutinas</NavLink>
-          </li>
-          <li>
-            <NavLink to="/MiFit">MiFit</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+
+        {/* Botón Hamburguesa (Solo en móviles) */}
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
+
+        {/* Menú de Navegación */}
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <ul>
+            <li><Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
+            <li><Link to="/mifit" onClick={() => setMenuOpen(false)}>MiFit</Link></li>
+            <li><Link to="/routine" onClick={() => setMenuOpen(false)}>Rutinas</Link></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
-}
+};
 
 export default Header;
